@@ -10,6 +10,6 @@ BrainLink utilizes a modern web application architecture with a focus on real-ti
 
 ##### Getting Started
 To run BrainLink locally, follow these steps:
-- Clone the repository: git clone https://github.com/your-username/brainlink.git
+- Clone the repository: git clone https://github.com/sapera11/Brain-Link
 - Install dependencies: npm install
 - Start the application: npm run dev
