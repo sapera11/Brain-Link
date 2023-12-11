@@ -1,4 +1,4 @@
-#### BRAIN-LINK APP
+##### BRAIN-LINK APP
 Welcome to BrainLink, an innovative web application designed to enhance collaboration and communication among students. BrainLink facilitates real-time discussions, group projects, file sharing, and secure communication. This readme provides a simple guide to understand the key aspects of our project.
 
 ##### Architecture
