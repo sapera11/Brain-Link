@@ -8,6 +8,7 @@ import {
   Tabs,
   Text,
 } from "@chakra-ui/react";
+import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Login from "../components/Authentication/Login";
 import Signup from "../components/Authentication/Signup";
@@ -15,10 +16,16 @@ import Signup from "../components/Authentication/Signup";
 function Homepage() {
   const nav = useNavigate();
 
+  useEffect(() => {
+    const user = JSON.parse(localStorage.getItem("userInfo"));
+
+    if (user) nav("/chats");
+  }, [nav]);
+
   return (
     <Container maxW="xl" centerContent>
       <Box
-        d="flex"
+        display="flex"
         justifyContent="center"
         p={3}
         bg="white"
@@ -27,9 +34,7 @@ function Homepage() {
         borderRadius="lg"
         borderWidth="1px"
       >
-        <Text fontSize="4xl" fontFamily="Work sans">
-          BRAIN-LINK
-        </Text>
+        <Text fontSize="4xl">BRAIN-LINK</Text>
       </Box>
       <Box bg="white" w="100%" p={4} borderRadius="lg" borderWidth="1px">
         <Tabs isFitted variant="soft-rounded">
